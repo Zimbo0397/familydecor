@@ -1,0 +1,795 @@
+@import _mixins
+
+//----------------------------------
+// DEV
+//----------------------------------
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+	display: none !important
+#__bs_notify__
+	display: none !important
+	opacity: 0 !important
+
+//----------------------------------
+// END DEV
+//----------------------------------
+
+
+body
+	// &::-webkit-scrollbar
+
+
+//----------------------------------
+// TEST
+//----------------------------------
+section.test-block
+	margin: 100px 0
+//----------------------------------
+// END TEST
+//----------------------------------
+
+.main-display 
+	background: url(../img/content/main-bg.jpg) 50% 50% no-repeat
+	background-size: cover
+	padding: 150px 0
+	@media #{$media-xs-down}
+		padding: 50px 0
+	h1
+		color: #fff
+		text-transform: uppercase
+		font-size: 2.5em
+		line-height: 1.4em
+		text-align: center
+		@media #{$media-xs-down}
+			font-size: 1.9em
+	.order-now
+		padding-left: 480px
+		position: relative
+		padding-bottom: 100px
+		max-width: 1040px
+		margin: 0 auto
+		text-align: center
+		@media #{$media-lg-down}
+			max-width: 860px
+			padding-left: 380px
+		@media #{$media-sm-down}
+			padding-left: 0
+			max-width: 430px
+		.label
+			position: absolute
+			top: 3px
+			left: -50px
+			@media #{$media-sm-down}
+				position: static
+				text-align: center
+				margin-bottom: 40px
+		p
+			font-size: 1.5em
+			color: #fff
+			text-transform: uppercase
+			@media #{$media-sm-down}
+				display: none
+			&.new
+				background: #51c7eb
+				padding: 6px
+				display: inline-block
+				margin-bottom: 120px
+				font-size: 1.9em
+				line-height: 1.1em
+				border-radius: 3px
+				@media #{$media-xs-down}
+					font-size: 1em
+					display: block
+					margin: 10px auto
+				.price
+					color: #8f19f7
+					font-weight: 700
+				.cur
+					text-transform: none
+					color: #fff
+					font-weight: 100
+					font-size: 0.95em
+			&.old
+				span
+					text-decoration: line-through
+			span
+				font-size: 1.3em
+		.counter-holder
+			@media #{$media-sm-down}
+				display: none
+		.image-holder
+			width: 450px
+			display: inline-block
+			@media #{$media-lg-down}
+				width: 350px
+			@media #{$media-xs-down}
+				width: 290px
+		.time
+			@media #{$media-sm-down}
+				text-align: center
+
+.advantages-display
+	border-top: 10px solid #51c7eb
+	box-shadow: inset 0px -68px 64px -80px rgba(0,0,0,0.71)
+	h2
+		text-align: center
+	p
+		color: #949494
+	.advantages-cont
+		padding-left: 50%
+		position: relative
+		@media #{$media-xs-down}
+			padding-left: 0
+	.main-img
+		position: absolute
+		left: 7vw
+		top: 50%
+		transform: translateY(-50%) translateZ(0)
+		width: 350px
+		@media #{$media-xs-down}
+			position: relative
+			left: 0
+			top: 0
+			transform: none
+			max-width: 350px
+			margin: 0 auto
+	.advantages-list
+		text-align: left
+		margin: 45px 0
+		width: 100%
+		padding-left: 40px
+		@media #{$media-xs-down}
+			max-width: 400px
+			margin: 0 auto
+			margin-top: 60px
+			padding-left: 0
+		.image-holder
+			height: 40px
+			width: 40px
+			position: absolute
+			top: -7px
+			left: 0
+		li
+			position: relative
+			padding-left: 60px
+			margin-bottom: 15px
+		p
+			display: inline-block
+			color: #949494
+			font-size: 0.9em
+.how-it-works
+	background: url(../img/content/advantages-bg.jpg) 50% 50% no-repeat
+	background-size: cover
+	text-align: center
+	position: relative
+	overflow: hidden
+	padding: 150px 0
+	padding-bottom: 370px
+	li
+		padding-left: 70px
+		position: relative
+		margin-bottom: 20px
+		max-width: 450px
+		@media #{$media-xs-down}
+			width: 100% !important
+			padding-left: 51px
+			
+	.devider-top
+		content: ''
+		position: absolute
+		top: -4vw
+		right: -20px
+		height: 150px
+		width: 130%
+		background: #33b0f0
+		transform: rotate(-3deg)
+		box-shadow: 0 0 60px rgba(0,0,0,0.8)
+	.devider-bott
+		content: ''
+		position: absolute
+		bottom: -4vw
+		right: -20px
+		height: 350px
+		width: 130%
+		background: #33b0f0
+		transform: rotate(-3deg)
+		box-shadow: 0 0 60px rgba(0,0,0,0.8)
+	.image-holder
+		border-radius: 35px
+		width: 60px
+		height: 60px
+		position: absolute
+		top: -13px
+		left: 0
+		@media #{$media-sm-down}
+			width: 40px
+			height: 40px
+			top: -2px
+	p
+		color: #f5f4f4
+		text-align: left
+	.how-to-get
+		color: #fff
+		padding: 20px
+		position: absolute
+		bottom: 50px
+		left: 0
+		width: 100%
+		z-index: 2
+		h3
+			text-shadow: 1px 1px 0px #bbbbbb, 0 0 0.3em #4c4c4c
+			margin-bottom: 70px
+			@media #{$media-sm-down}
+				margin-bottom: 0px
+				font-size: 1em
+		ul
+			@media #{$media-sm-down}
+				max-width: 450px
+				display: inline-block
+		li
+			margin: 0 15px
+			@media #{$media-sm-down}
+				margin: 0
+				display: block
+				min-height: 50px
+				text-align: left
+			.image-holder
+				top: -22px
+				@media #{$media-sm-down}
+					top: -2px
+.start-order
+	text-align: center
+	margin-top: 90px
+	&.type-2
+		background: #fff
+
+
+.info-block
+	padding: 0
+	background: #383640
+	.description
+		padding: 20px
+		display: inline-block
+		vertical-align: top
+		background: url(../img/content/main-bg2.jpg) 50% 50% no-repeat
+		background-size: cover
+		position: relative
+		text-align: center
+		@media #{$media-sm-down}
+			width: 100%
+		.image-holder
+			width: 530px
+			display: inline-block
+			@media #{$media-sm-down}
+				width: 100%
+	.facts
+		display: inline-block
+		padding: 20px
+		text-align: center
+		width: 100%
+		@media #{$media-sm-down}
+			width: 100%
+			text-align: center
+		.list-inline
+			display: inline-block
+		li
+			position: relative
+			padding-top: 80px
+			margin: 40px 60px
+			color: #fff
+			@media #{$media-sm-down}
+				text-align: center
+				margin-bottom: 40px
+				padding-left: 0
+			&:last-child
+				margin-bottom: 0
+			.image-holder
+				width: 60px
+				height: 60px
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translateX(-50%)
+				@media #{$media-sm-down}
+					position: static
+					display: block
+					margin: 0 auto
+					margin-bottom: 30px
+			.big
+				font-size: 35px
+				color: #fff
+
+.spheres
+	h2
+		text-align: center
+	.inline-layout.col-4 > *
+		@media #{$media-sm-down}
+			width: 33.333%
+		@media #{$media-xs-down}
+			width: 50%
+.spheres-container
+	position: relative
+	margin: 0 auto
+	max-width: 762px
+	.ff-image
+		padding: 0 40px
+		width: 389px
+		height: 290px
+		.image-holder
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			width: 300px
+.spheres-list
+	margin-top: 90px
+	li
+		position: relative
+		margin-bottom: 30px
+		text-align: center
+		.image-holder
+			width: 130px
+			height: 130px
+			display: block
+			margin: 0px auto
+			margin-bottom: 20px
+			border: 1px solid #ada8a8
+			border-radius: 50%
+			@media #{$media-xs-down}
+				width: 120px
+				height: 120px
+
+
+.recomendations
+	background: url(../img/content/info-bg.jpg) 50% 50% no-repeat
+	background-size: cover
+	text-align: center
+	border-bottom: 10px solid #51c7eb
+	box-shadow: inset 0px 64px 64px -70px rgba(0,0,0,0.75)
+	h4
+		color: #dde01d
+		margin-bottom: 40px
+	ul
+		color: #fff
+		display: inline-block
+		li
+			position: relative
+			padding-left: 1.3rem
+			margin-bottom: 10px
+			text-align: left
+		i
+			color: #dde01d
+			position: absolute
+			top: 2px
+			left: 1px
+	.recomendations-holder	
+		position: relative
+		max-width: 910px
+		margin: 0 auto
+		.image-holder
+			position: absolute
+			top: 0
+			left: 10px
+			width: 250px
+			margin-top: 110px
+		table
+			width: 100%
+			max-width: 510px
+			margin: 0 auto
+			color: #fff
+			text-align: left
+			border-collapse: collapse
+			td
+				border-bottom: 1px solid #fff
+				border-collapse: collapse
+				padding: 3px
+				&:last-child
+					text-align: right
+
+.fuel-set
+	text-align: center
+	.inline-layout
+		margin-top: 50px
+		@media #{$media-sm-down}
+			margin-top: 30px
+		&.col-2 > *
+			@media #{$media-sm-down}
+				width: 100%
+	.text-block
+		padding-top: 120px
+		@media #{$media-sm-down}
+			padding-top: 40px
+		p
+			text-transform: uppercase
+			font-size: 1.8em
+			font-weight: 600
+			line-height: 1.2em
+			color: #fff
+	.device-photo
+		width: 380px
+		height: 380px
+		border-radius: 50%
+		display: inline-block
+		@media #{$media-sm-down}
+			margin-top: 20px
+			width: 250px
+			height: 250px
+	.works-container
+		background: #33b0f0
+		padding: 20px
+		position: relative
+		padding-top: 56px
+		@media #{$media-sm-down}
+			padding-top: 20px
+	.scrolldown-container
+		@media #{$media-sm-down}
+			position: static
+	.works-desc
+		color: #fff
+		text-align: left
+		margin: 0
+		@media #{$media-sm-down}
+			color: #fff
+			text-align: left
+			margin: 0
+		li
+			position: relative
+			height: 159px
+			padding-left: 173px
+			max-width: 450px
+			padding-bottom: 56px
+			@media #{$media-sm-down}
+				padding: 0
+				height: auto
+				max-width: 100%
+				margin-top: 30px
+				text-align: center
+			&:last-child
+				height: 90px
+				@media #{$media-sm-down}
+					height: auto
+		.image-holder
+			width: 110px
+			height: 110px
+			position: absolute
+			top: -23px
+			left: 0
+			@media #{$media-sm-down}
+				position: static
+				margin: 0 auto
+.how-we-works
+	text-align: center
+	li
+		width: 240px
+		padding: 0 10px
+		position: relative
+		@media #{$media-sm-down}
+			width: 100%
+		.image-holder
+			width: 150px
+			height: 150px
+			display: inline-block
+			position: relative
+		i
+			font-size: 2.2em
+			position: absolute
+			top: 63px
+			right: -10px
+			@media #{$media-sm-down}
+				display: none
+	h6
+		color: #353333
+		font-weight: 600
+		font-size: 1.1em
+		margin: 15px 0
+		height: 50px
+		overflow: hidden
+
+.order-form
+	background: url(../img/content/form-bg.jpg) 50% 100% no-repeat
+	background-size: cover
+	text-align: right
+	box-shadow: inset 0px -68px 64px -80px rgba(0,0,0,0.71)
+	padding: 100px 0
+	@media #{$media-md-down}
+		text-align: center
+	.form
+		position: relative
+		padding: 0 20px
+		padding-left: 400px
+		text-align: right
+		max-width: 970px
+		margin: 0 auto
+		@media #{$media-md-down}
+			padding-left: 320px
+		@media #{$media-sm-down}
+			padding-left: 0
+			text-align: center
+		.text-ab
+			position: absolute
+			top: 0
+			left: 0
+			width: 380px
+			text-align: center
+			font-weight: 700
+			font-size: 1.9rem
+			line-height: 1.6em
+			@media #{$media-sm-down}
+				position: static
+				text-align: center
+				width: 100%
+			.right-now
+				font-size: 1.8em
+				line-height: 1em
+				border-bottom: 4px solid #33b0f0
+				display: inline-block
+				margin-bottom: 20px
+	p
+		text-transform: uppercase
+		text-align: right
+		font-size: 1.6rem
+		color: #fff
+		margin-bottom: 20px
+		line-height: 1.2em
+		@media #{$media-sm-down}
+			margin-bottom: 0
+			text-align: center
+		@media #{$media-xs-down}
+			font-size: 1.1rem
+		.discount
+			color: #8f19f7
+			display: inline-block
+			padding: 2px
+			margin-left: 10px
+			font-size: 1.3em
+	.prices
+		margin-bottom: 20px
+		@media #{$media-sm-down}
+			margin-top: 30px
+	.price-block
+		display: inline-block
+		background: #33b0f0
+		color: #000
+		padding: 8px
+		text-align: left
+		vertical-align: middle
+		&.old
+			display: inline-block
+			padding: 8px
+			text-align: left
+			vertical-align: middle
+			background: transparent
+			font-weight: bold
+			color: #fff
+			font-size: 1.4em
+			margin-right: 50px
+			background: transparent
+			.old
+				text-decoration: line-through
+				line-height: 1.3em
+		.new
+			color: #8f19f7
+			display: inline-block
+			font-weight: 700
+			white-space: nowrap
+			font-size: 3.5em
+			line-height: 1em
+	.form-holder
+		text-align: center
+		display: inline-block
+		vertical-align: top
+		max-width: 300px
+		width: 100%
+		@media #{$media-sm-down}
+			max-width: 100%
+		input
+			margin-bottom: 20px
+			display: block
+			padding: 1px
+			width: 100%
+			&::-webkit-input-placeholder
+				text-transform: uppercase
+				font-size: 0.8em
+			&::-moz-placeholder
+				text-transform: uppercase
+				font-size: 0.8em
+			&:-ms-input-placeholder
+				text-transform: uppercase
+				font-size: 0.8em
+			&:-moz-placeholder
+				text-transform: uppercase
+				font-size: 0.8em
+			@media #{$media-sm-down}
+				margin: 10px auto
+				max-width: 250px
+	.image-holder
+		width: 370px
+		display: inline-block
+		vertical-align: top
+		position: absolute
+		top: 10px
+		left: 0
+		-webkit-box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75)
+		-moz-box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75)
+		box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75)
+		@media #{$media-md-down}
+			width: 310px
+			top: 50px
+		@media #{$media-sm-down}
+			position: static
+			margin-bottom: 50px
+		@media #{$media-xs-down}
+			display: none
+
+.comments
+	overflow: hidden
+	background: url(../img/content/comments-bg.jpg) 50% 50% no-repeat
+	background-size: cover
+	position: relative
+	.devider-top
+		content: ''
+		position: absolute
+		top: -4vw
+		right: -20px
+		height: 150px
+		width: 130%
+		background: #33b0f0
+		transform: rotate(-3deg)
+		box-shadow: 0 0 60px rgba(0,0,0,0.8)
+	.devider-bott
+		content: ''
+		position: absolute
+		bottom: -4vw
+		right: -20px
+		height: 110px
+		width: 130%
+		background: #33b0f0
+		transform: rotate(-3deg)
+		box-shadow: 0 0 60px rgba(0,0,0,0.8)
+	// .comm-icon
+	// 	position: absolute
+	// 	top: -30px
+	// 	left: 50%
+	// 	transform: translateX(-50%)
+	// 	font-size: 2.2em
+	// 	background: rgb(221, 224, 29)
+	// 	padding: 11px
+	// 	border-radius: 50%
+	// 	color: #3a4a4f
+	li
+		padding: 0 40px
+		margin-bottom: 130px
+		&:nth-child(even)
+			.comment-holder
+				.image-holder
+					right: auto
+					left: 0
+					border: 1px solid #bfbbbb
+					@media #{$media-xs-down}
+						right: 0px
+						left: auto
+				&:after
+					
+					bottom: -50px
+					right: auto
+					left: 50px
+					transform: rotate(26deg)
+					@media #{$media-xs-down}
+						right: 50px
+						left: auto
+						transform: rotate(-26deg)
+	.inline-layout
+		&.col-2 > *
+			@media #{$media-xs-down}
+				width: 100%
+	.comment-holder
+		position: relative
+		background: #e4e1e1
+		padding: 10px
+		padding-bottom: 10px
+		border-radius: 3px
+		p
+			color: #ada9a9
+			font-weight: 200
+		a
+			color: #11b5da
+			text-decoration: none
+		.image-holder
+			height: 60px
+			width: 60px
+			position: absolute
+			right: 0
+			bottom: -110px
+			border-radius: 50%
+		&:after
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 70px 10px 0 10px
+			border-color: #e4e1e1 transparent transparent transparent
+			position: absolute
+			bottom: -50px
+			right: 50px
+			transform: rotate(-26deg)
+
+
+
+
+.scrolldown-container
+	position: absolute
+	text-align: center
+	bottom: 21px
+	left: 46px
+
+.scrolldown-btn
+	position: relative
+	display: inline-block
+	path
+		&.first-path
+			animation: scrollanim 1s ease-in-out infinite
+			animation-delay: 0.8s
+		&.second-path
+			animation: scrollanim2 1s ease-in-out infinite
+
+@-webkit-keyframes scrollanim
+	0%
+		-webkit-transform: translate(0, -40px)
+		opacity: 0
+	60%
+		-webkit-transform: translate(0, 0)
+		opacity: 0.8
+
+@-moz-keyframes scrollanim
+	0%
+		-moz-transform: translate(0, -40px)
+		opacity: 0
+	60%
+		-moz-transform: translate(0, 0)
+		opacity: 0.8
+
+@keyframes scrollanim
+	0%
+		-webkit-transform: translate(0, -40px)
+		-moz-transform: translate(0, -40px)
+		-ms-transform: translate(0, -40px)
+		-o-transform: translate(0, -40px)
+		transform: translate(0, -40px)
+		opacity: 0
+	60%
+		-webkit-transform: translate(0, 0)
+		-moz-transform: translate(0, 0)
+		-ms-transform: translate(0, 0)
+		-o-transform: translate(0, 0)
+		transform: translate(0, 0)
+		opacity: 0.8
+
+@-webkit-keyframes scrollanim2
+	0%
+		-webkit-transform: translate(0, -40px)
+		opacity: 0
+	60%
+		-webkit-transform: translate(0, 0px)
+		opacity: 0.6
+
+@-moz-keyframes scrollanim2
+	0%
+		-moz-transform: translate(0, -40px)
+		opacity: 0
+	60%
+		-moz-transform: translate(0, 0px)
+		opacity: 0.6
+@keyframes scrollanim2
+	0%
+		-webkit-transform: translate(0, -40px)
+		-moz-transform: translate(0, -40px)
+		-ms-transform: translate(0, -40px)
+		-o-transform: translate(0, -40px)
+		transform: translate(0, -40px)
+		opacity: 0
+	60%
+		-webkit-transform: translate(0, 0px)
+		-moz-transform: translate(0, 0px)
+		-ms-transform: translate(0, 0px)
+		-o-transform: translate(0, 0px)
+		transform: translate(0, 0px)
+		opacity: 0.6

@@ -1,0 +1,252 @@
+extends layout
+
+block vars
+	- var title = "FF-home"
+	- var navigation = "index"
+
+block content
+	section.main-display
+		.container
+			h1
+				|Ручная экспресс зарядка - 
+				br
+				| вечный источник питания!
+			.order-now
+					.label
+						.image-holder
+							img(src="img/icons/12.png", alt="")
+					.time
+						p.old Старая цена: 
+							span.price   419 грн
+						p.new Цена по акции: 
+							span.price    199
+								span.cur грн 
+						p До конца акции осталось
+						.counter-holder
+							#CDT
+						a(href="#").order.button.orderbtn  Заказать
+
+	section.advantages-display
+		.container
+			h2 РУЧНАЯ ЭКСПРЕСС ЗАРЯДКА
+			p
+				b Покупайте малогабаритную динамо-зарядку - 
+				|она поможет подзарядить ваш телефон, навигатор, планшет, светодиодный фонарь, радиоприемник, в экстренной ситуации.
+			.advantages-cont
+				.image-holder.main-img
+					img.fake-img(src="img/content/mount.jpg", alt="img/content/mount.jpg")
+					.img(style= 'background-image: url(/img/content/mount.jpg)')
+				ul.advantages-list
+					li(data-wow-duration="1.2s").wow.bounceInRight
+						.image-holder
+							img(src="img/icons/b-1.svg", alt="")
+						p
+							|USB-порт для зарядки любых устройств
+					li(data-wow-duration="1.4s").wow.bounceInRight
+						.image-holder
+							img(src="img/icons/b-2.svg", alt="")
+						p
+							|Ваша собственная миниатюрная электростанция в кармане
+					li(data-wow-duration="1.6s").wow.bounceInRight
+						.image-holder
+							img(src="img/icons/b-3.svg", alt="")
+						p
+							|2 минут зарядки = до 6 минут в режиме разговора
+					li(data-wow-duration="1.8s").wow.bounceInRight
+						.image-holder
+							img(src="img/icons/b-4.svg", alt="")
+						p
+							|Удобное для использования в путешествии
+					li(data-wow-duration="2s").wow.bounceInRight
+						.image-holder
+							img(src="img/icons/b-6.svg", alt="")
+						p
+							|Безопасная в использовании
+					li(data-wow-duration="2.2s").wow.bounceInRight
+						.image-holder
+							img(src="img/icons/b-5.svg", alt="")
+						p
+							|Полная совместимость со всеми устройствами на Android
+	section.how-it-works.white
+		.devider-top
+		.container
+			h2  Возможности ЭКСПРЕСС ЗАРЯДКи
+			.works-description
+				ul.inline-layout.col-2
+					li.wow.bounceInLeft
+						.image-holder
+							img(src="img/icons/h-1.svg", alt="")
+						p
+							|Можно подключать любое устройство usb: телефон, планшет, плеер
+					li.wow.bounceInUp
+						.image-holder
+							img(src="img/icons/h-2.svg", alt="")
+						p
+							|Незаменимая вещь в походах, путешествиях, экспедициях - там, где нет розеток
+					li.wow.bounceInRight
+						.image-holder
+							img(src="img/icons/h-3.svg", alt="")
+						p
+							|Удобство и простота использования - отсутствие каких-либо батареек или аккумуляторов!
+					li.wow.bounceInLeft
+						.image-holder
+							img(src="img/icons/h-4.svg", alt="")
+						p
+							|За 3 минуты использования сможет зарядить ваш телефон для 6-8 минут работы в режиме разговора или на 20-30 минут в режиме ожидания.
+					li.wow.bounceInUp
+						.image-holder
+							img(src="img/icons/h-5.svg", alt="")
+						p
+							|Легкий вес, малый размер, компактная складывающаяся ручка-крутилка.
+					li.wow.bounceInRight
+						.image-holder
+							img(src="img/icons/h-6.svg", alt="")
+						p
+							|Не вращайте слишком быстро, сохраняйте темп 100-120 оборотов в минуту
+			.how-to-get
+				h3 Как получить портативное зарядное устройство ?
+				ul.list-inline
+					li.wow.bounceInLeft
+						.image-holder
+							img(src="img/icons/h2-1.svg", alt="")
+						span Оформляете заказ на сайте
+					li.wow.bounceInUp
+						.image-holder
+							img(src="img/icons/h2-2.svg", alt="")
+						span Подтверждаете заказ с менеджером
+					li.wow.bounceInRight
+						.image-holder
+							img(src="img/icons/h2-3.svg", alt="")
+						span Получаете заказ на почте)
+					
+		.devider-bott
+
+	section.recomendations
+		.container
+			.recomendations-holder.wow.bounceInUp
+				h2 Характеристики Устройства
+				table
+					tbody
+						tr
+							td Напряжение на USB выходе:
+							td DC 5V постоянное
+						tr
+							td Средний ток заряда:
+							td 400mA
+						tr
+							td Размеры:
+							td 6 x 2.8 x 4.3 см
+						tr
+							td Материал корпуса:
+							td пластик ABS
+						tr
+							td Вес:
+							td 57 гр.
+
+		.start-order
+				a(href="#").button.lg-button.orderbtn Купить
+
+	section.fuel-set
+		.container
+			h2 Как это работает ?
+			.works-container.inline-layout.col-2
+				.inline-el.wow.bounceInLeft
+					.image-holder.device-photo
+						img(src="img/content/fuel-foto.jpg", alt="")
+				.inline-el.wow.bounceInRight
+					ul.works-desc
+						li
+							.image-holder
+								img(src="img/icons/h-6.svg", alt="")
+							.scrolldown-container
+								.scrolldown-btn
+									svg(version='1.1', id='Слой_1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='20px', height='45px', viewbox='0 0 50 80', enable-background='new 0 0 50 80', xml:space='preserve')
+										path.first-path(fill='#FFFFFF', d='M24.752,79.182c-0.397,0-0.752-0.154-1.06-0.463L2.207,57.234c-0.306-0.305-0.458-0.656-0.458-1.057\
+										s0.152-0.752,0.458-1.059l2.305-2.305c0.309-0.309,0.663-0.461,1.06-0.461c0.398,0,0.752,0.152,1.061,0.461l18.119,18.119\
+										l18.122-18.119c0.306-0.309,0.657-0.461,1.057-0.461c0.402,0,0.753,0.152,1.059,0.461l2.306,2.305\
+										c0.308,0.307,0.461,0.658,0.461,1.059s-0.153,0.752-0.461,1.057L25.813,78.719C25.504,79.027,25.15,79.182,24.752,79.182z')
+										path.second-path(fill='#FFFFFF', d='M24.752,58.25c-0.397,0-0.752-0.154-1.06-0.463L2.207,36.303c-0.306-0.304-0.458-0.655-0.458-1.057\
+										c0-0.4,0.152-0.752,0.458-1.058l2.305-2.305c0.309-0.308,0.663-0.461,1.06-0.461c0.398,0,0.752,0.153,1.061,0.461l18.119,18.12\
+										l18.122-18.12c0.306-0.308,0.657-0.461,1.057-0.461c0.402,0,0.753,0.153,1.059,0.461l2.306,2.305\
+										c0.308,0.306,0.461,0.657,0.461,1.058c0,0.401-0.153,0.753-0.461,1.057L25.813,57.787C25.504,58.096,25.15,58.25,24.752,58.25z')
+							span Крутим ручку вырабатываем электроенергию
+						li
+							.image-holder
+								img(src="img/icons/h-7.svg", alt="")
+							.scrolldown-container
+								.scrolldown-btn
+									svg(version='1.1', id='Слой_1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='20px', height='45px', viewbox='0 0 50 80', enable-background='new 0 0 50 80', xml:space='preserve')
+										path.first-path(fill='#FFFFFF', d='M24.752,79.182c-0.397,0-0.752-0.154-1.06-0.463L2.207,57.234c-0.306-0.305-0.458-0.656-0.458-1.057\
+										s0.152-0.752,0.458-1.059l2.305-2.305c0.309-0.309,0.663-0.461,1.06-0.461c0.398,0,0.752,0.152,1.061,0.461l18.119,18.119\
+										l18.122-18.119c0.306-0.309,0.657-0.461,1.057-0.461c0.402,0,0.753,0.152,1.059,0.461l2.306,2.305\
+										c0.308,0.307,0.461,0.658,0.461,1.059s-0.153,0.752-0.461,1.057L25.813,78.719C25.504,79.027,25.15,79.182,24.752,79.182z')
+										path.second-path(fill='#FFFFFF', d='M24.752,58.25c-0.397,0-0.752-0.154-1.06-0.463L2.207,36.303c-0.306-0.304-0.458-0.655-0.458-1.057\
+										c0-0.4,0.152-0.752,0.458-1.058l2.305-2.305c0.309-0.308,0.663-0.461,1.06-0.461c0.398,0,0.752,0.153,1.061,0.461l18.119,18.12\
+										l18.122-18.12c0.306-0.308,0.657-0.461,1.057-0.461c0.402,0,0.753,0.153,1.059,0.461l2.306,2.305\
+										c0.308,0.306,0.461,0.657,0.461,1.058c0,0.401-0.153,0.753-0.461,1.057L25.813,57.787C25.504,58.096,25.15,58.25,24.752,58.25z')
+							span Идет процесс зарядки
+						li
+							.image-holder
+								img(src="img/icons/h-8.svg", alt="")
+							span Ловкость рук и никакого волшебства
+	section#order-form.order-form
+		.container
+			.form
+				form(action="")
+					//- .image-holder
+					//- 	img(src="img/content/bl-or.jpg", alt="")
+					p.text-ab
+						|Закажите
+						br
+						|прямо сейчас 
+						span.right-now зарядку
+						br
+						| со скидкой
+						span.discount 53%
+					div.prices
+						.price-block.old
+							span Старая цена: 
+							br 
+							span.old    499 грн
+						.price-block
+							span Новая цена:   
+							br
+							span.new    199 грн 
+					.form-holder
+						input(type="text", placeholder="Введите ФИО")
+						input(type="text", placeholder="Введите номер телефона")
+						input(type="submit", value="Заказать", class="button")
+
+	section.comments
+		.devider-top
+		.comm-icon
+			i.fa.fa-comments-o
+		.container
+			ul.inline-layout.col-2
+				li.wow.bounceInUp
+					.comment-holder
+						p  Для любителей путешествий, рыбаков и охотников вещица очень нужная, мобилку подзарядить, подсветить. Очень рекомендую полезная штука.
+						a(href="#")  Валентин Чижов
+						.image-holder
+							img(src="img/content/ot11.jpg", alt="")
+				li.wow.bounceInUp
+					.comment-holder
+						p  Реально быстро заряжает телефон в экстренных случаях Очень компактная в сложенном виде. Можно везде брать с собой, на природу, в поезд, на улицу на отдых.
+						a(href="#")  Гаврило Владимиров
+						.image-holder
+							img(src="img/content/ot12.jpg", alt="")
+				li.wow.bounceInUp
+					.comment-holder
+						p  Хорошее качество, ребенок крутил крутил, ничего не сломал. Работает практически со всеми USB устройствами.
+						a(href="#")  Евгений Буйнарский
+						.image-holder
+							img(src="img/content/ot13.jpg", alt="")
+				li.wow.bounceInUp
+					.comment-holder
+						p  Компактная складывающаяся ручка-крутилка. Минусы - не обнаружено
+						a(href="#")  Василий Климов
+						.image-holder
+							img(src="img/content/ot14.jpg", alt="")
+		.devider-bott
+
+ 
