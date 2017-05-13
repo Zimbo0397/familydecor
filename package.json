@@ -1,7 +1,7 @@
 {
-  "name": "handcharger",
+  "name": "familydecor",
   "version": "0.0.1",
-  "description": "handcharger site",
+  "description": "familydecor site",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zimbo0397/handcharger.git"
+    "url": "git+https://github.com/Zimbo0397/familydecor.git"
   },
   "keywords": [],
   "author": "---",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Zimbo0397/handcharger.git"
+    "url": "https://github.com/Zimbo0397/familydecor.git"
   },
-  "homepage": "https://github.com/Zimbo0397/handcharger.git/#readme"
+  "homepage": "https://github.com/Zimbo0397/familydecor.git/#readme"
 }

@@ -1,0 +1,33 @@
+extends layout
+
+block vars
+	- var title = "FD"
+	- var navigation = "index"
+
+block content
+	.section.modals
+		div(style="margin-top: 100px")
+		.mobile-modal
+			a(href="#").modal-close
+			.call-icon
+				img(src="img/icons/call-1.svg", alt="")
+			.text-holder
+				p
+					|введите ваш номер телефона и наши менеджеры свяжутся с вами в ближайшее время
+				form.js-reg-field
+					.field
+						input.js-valid-phone(name="field", placeholder="+38 /ххх/ ххх хх хх")
+					.btns
+						button.button.red перезвоните мне
+		div(style="margin-top: 100px")
+		.mobile-modal.thnks-modal
+			a(href="#").modal-close
+			.text-holder.text-center
+				h3 СПАСИБО ЗА ЗАКАЗ!
+				.btns
+					button.button.red ЗАКРЫТ
+		div(style="margin-top: 100px")
+
+
+
+

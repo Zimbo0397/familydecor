@@ -28,768 +28,1038 @@ section.test-block
 // END TEST
 //----------------------------------
 
-.main-display 
-	background: url(../img/content/main-bg.jpg) 50% 50% no-repeat
-	background-size: cover
-	padding: 150px 0
-	@media #{$media-xs-down}
-		padding: 50px 0
-	h1
-		color: #fff
-		text-transform: uppercase
-		font-size: 2.5em
-		line-height: 1.4em
-		text-align: center
-		@media #{$media-xs-down}
-			font-size: 1.9em
-	.order-now
-		padding-left: 480px
-		position: relative
-		padding-bottom: 100px
-		max-width: 1040px
-		margin: 0 auto
-		text-align: center
-		@media #{$media-lg-down}
-			max-width: 860px
-			padding-left: 380px
-		@media #{$media-sm-down}
-			padding-left: 0
-			max-width: 430px
-		.label
-			position: absolute
-			top: 3px
-			left: -50px
-			@media #{$media-sm-down}
-				position: static
-				text-align: center
-				margin-bottom: 40px
-		p
-			font-size: 1.5em
-			color: #fff
-			text-transform: uppercase
-			@media #{$media-sm-down}
-				display: none
-			&.new
-				background: #51c7eb
-				padding: 6px
-				display: inline-block
-				margin-bottom: 120px
-				font-size: 1.9em
-				line-height: 1.1em
-				border-radius: 3px
-				@media #{$media-xs-down}
-					font-size: 1em
-					display: block
-					margin: 10px auto
-				.price
-					color: #8f19f7
-					font-weight: 700
-				.cur
-					text-transform: none
-					color: #fff
-					font-weight: 100
-					font-size: 0.95em
-			&.old
-				span
-					text-decoration: line-through
-			span
-				font-size: 1.3em
-		.counter-holder
-			@media #{$media-sm-down}
-				display: none
-		.image-holder
-			width: 450px
-			display: inline-block
-			@media #{$media-lg-down}
-				width: 350px
-			@media #{$media-xs-down}
-				width: 290px
-		.time
-			@media #{$media-sm-down}
-				text-align: center
-
-.advantages-display
-	border-top: 10px solid #51c7eb
-	box-shadow: inset 0px -68px 64px -80px rgba(0,0,0,0.71)
-	h2
-		text-align: center
-	p
-		color: #949494
-	.advantages-cont
-		padding-left: 50%
-		position: relative
-		@media #{$media-xs-down}
-			padding-left: 0
-	.main-img
-		position: absolute
-		left: 7vw
-		top: 50%
-		transform: translateY(-50%) translateZ(0)
-		width: 350px
-		@media #{$media-xs-down}
-			position: relative
-			left: 0
-			top: 0
-			transform: none
-			max-width: 350px
-			margin: 0 auto
-	.advantages-list
-		text-align: left
-		margin: 45px 0
-		width: 100%
-		padding-left: 40px
-		@media #{$media-xs-down}
-			max-width: 400px
-			margin: 0 auto
-			margin-top: 60px
-			padding-left: 0
-		.image-holder
-			height: 40px
-			width: 40px
-			position: absolute
-			top: -7px
-			left: 0
-		li
-			position: relative
-			padding-left: 60px
-			margin-bottom: 15px
-		p
-			display: inline-block
-			color: #949494
-			font-size: 0.9em
-.how-it-works
-	background: url(../img/content/advantages-bg.jpg) 50% 50% no-repeat
-	background-size: cover
-	text-align: center
-	position: relative
-	overflow: hidden
-	padding: 150px 0
-	padding-bottom: 370px
-	li
-		padding-left: 70px
-		position: relative
-		margin-bottom: 20px
-		max-width: 450px
-		@media #{$media-xs-down}
-			width: 100% !important
-			padding-left: 51px
-			
-	.devider-top
-		content: ''
-		position: absolute
-		top: -4vw
-		right: -20px
-		height: 150px
-		width: 130%
-		background: #33b0f0
-		transform: rotate(-3deg)
-		box-shadow: 0 0 60px rgba(0,0,0,0.8)
-	.devider-bott
-		content: ''
-		position: absolute
-		bottom: -4vw
-		right: -20px
-		height: 350px
-		width: 130%
-		background: #33b0f0
-		transform: rotate(-3deg)
-		box-shadow: 0 0 60px rgba(0,0,0,0.8)
-	.image-holder
-		border-radius: 35px
-		width: 60px
-		height: 60px
-		position: absolute
-		top: -13px
-		left: 0
-		@media #{$media-sm-down}
-			width: 40px
-			height: 40px
-			top: -2px
-	p
-		color: #f5f4f4
-		text-align: left
-	.how-to-get
-		color: #fff
-		padding: 20px
-		position: absolute
-		bottom: 50px
-		left: 0
-		width: 100%
-		z-index: 2
-		h3
-			text-shadow: 1px 1px 0px #bbbbbb, 0 0 0.3em #4c4c4c
-			margin-bottom: 70px
-			@media #{$media-sm-down}
-				margin-bottom: 0px
-				font-size: 1em
-		ul
-			@media #{$media-sm-down}
-				max-width: 450px
-				display: inline-block
-		li
-			margin: 0 15px
-			@media #{$media-sm-down}
-				margin: 0
-				display: block
-				min-height: 50px
-				text-align: left
-			.image-holder
-				top: -22px
-				@media #{$media-sm-down}
-					top: -2px
-.start-order
-	text-align: center
-	margin-top: 90px
-	&.type-2
-		background: #fff
 
 
-.info-block
-	padding: 0
-	background: #383640
-	.description
-		padding: 20px
-		display: inline-block
-		vertical-align: top
-		background: url(../img/content/main-bg2.jpg) 50% 50% no-repeat
-		background-size: cover
-		position: relative
-		text-align: center
+.top-line
+	background: #be2132
+	text-align: right
+	box-shadow: $box-shadow
+	.navigation
+		padding-top: 19px
+		margin-right: 11px
+		padding-bottom: 21px
+		padding-left: 260px
 		@media #{$media-sm-down}
-			width: 100%
-		.image-holder
-			width: 530px
-			display: inline-block
-			@media #{$media-sm-down}
-				width: 100%
-	.facts
-		display: inline-block
-		padding: 20px
-		text-align: center
-		width: 100%
-		@media #{$media-sm-down}
-			width: 100%
+			padding-left: 190px
+		@media #{$media-xs-down}
+			padding-left: 0
+		@media #{$media-xs-down}
 			text-align: center
-		.list-inline
-			display: inline-block
-		li
-			position: relative
-			padding-top: 80px
-			margin: 40px 60px
-			color: #fff
-			@media #{$media-sm-down}
-				text-align: center
-				margin-bottom: 40px
-				padding-left: 0
-			&:last-child
-				margin-bottom: 0
-			.image-holder
-				width: 60px
-				height: 60px
-				position: absolute
-				top: 0
-				left: 50%
-				transform: translateX(-50%)
-				@media #{$media-sm-down}
-					position: static
-					display: block
-					margin: 0 auto
-					margin-bottom: 30px
-			.big
-				font-size: 35px
-				color: #fff
-
-.spheres
-	h2
-		text-align: center
-	.inline-layout.col-4 > *
+			margin-right: 0
+		.button
+			border: 1px solid transparent
+			&:hover
+				background: transparent
+				border: 1px solid rgba(0, 0, 0, 0.54)
+	.image-holder
+		max-width: 173px
+		margin: 0 auto
+		margin-bottom: 14px
+	.inline-layout > *
+		vertical-align: middle
+	.phone-numbers
+		height: 31px
+		overflow: hidden
+		padding-right: 30px
+		margin-right: 33px
+		color: #fff
+		font-weight: 700
+		font-size: 1.2rem
+		position: relative
+		width: 256px
 		@media #{$media-sm-down}
-			width: 33.333%
+			display: block
+			margin-bottom: 20px
+		@media #{$media-md-down}
+			height: 21px
+			width: 217px
+		@media #{$media-sm-only}
+			position: absolute
+			top: 70px
+			right: 320px
 		@media #{$media-xs-down}
-			width: 50%
-.spheres-container
-	position: relative
-	margin: 0 auto
-	max-width: 762px
-	.ff-image
-		padding: 0 40px
-		width: 389px
-		height: 290px
+			margin: 30px auto
+		&.open,
+		&:hover
+			overflow: initial
+			.phones-list
+				box-shadow: $box-shadow
+				z-index: 2
+		.phones-list
+			position: absolute
+			top: -14px
+			left: 0
+			width: 100%
+			text-align: left
+			background: #be2132
+			padding: 12px
+			padding-right: 30px
+			z-index: 2
+		&:after
+			content: ''
+			position: absolute
+			top: 7px
+			right: 3px
+			background: url(../img/icons/expand-less.svg) 50% 50% no-repeat
+			height: 18px
+			width: 18px
+			z-index: 4
+			@media #{$media-md-down}
+				top: 3px
+		.black
+			color: #570f16
+			margin-right: 8px
+		.call
+			padding: 6px 21px
+	.nav-list
+		font-family: "Roboto"
+		margin-top: 22px
+		color: #fff
+		@media #{$media-sm-down}
+			display: none
+		&.mobile
+			max-height: 0
+			overflow: hidden
+			margin: 0
+			margin-top: 20px
+			@media #{$media-sm-down}
+				display: block
+			@media #{$media-md-up}
+				display: none
+			li
+				display: block
+				margin-left: 0
+		&.open
+			max-height: 1000px
+		li
+			margin-left: 26px
+			font-weight: 400
+			&:hover
+				text-decoration: underline
+	.login
+		text-transform: uppercase
+		padding: 0 52px
+		font-size: 1.2rem
+		text-decoration: none
+		color: #fff
+		position: relative
+		&:hover
+			text-decoration: underline
+		@media #{$media-xs-down}
+			display: block
+			margin: 20px auto
+			width: 170px
+
+		&:after
+			content: ''
+			position: absolute
+			height: 20px
+			width: 5px
+			top: 7px
+			right: 26px
+			background: url(../img/icons/more-copy.svg) 50% 50% no-repeat
+			@media #{$media-md-down}
+				top: 3px
+		&:before
+			content: ''
+			position: absolute
+			height: 20px
+			width: 5px
+			top: 7px
+			left: 26px
+			background: url(../img/icons/more-copy.svg) 50% 50% no-repeat
+			@media #{$media-md-down}
+				top: 3px
+	.logo
+		width: 242px
+		height: 195px
+		position: absolute
+		top: 1px
+		left: 10px
+		box-shadow: $box-shadow
+		text-align: center
+		background: $main-red
+		color: #fff
+		padding: 12px 20px
+		font-size: 0.75em
+		line-height: 1.4em
+		@media #{$media-sm-down}
+			width: 172px
+			height: 171px
+			top: 0px
+		@media #{$media-xs-down}
+			position: static
+			margin: 0 auto
+
+
+.main-display
+	padding-top: 32px
+	background: url(../img/icons/prytt-bg.svg) 0% -13% no-repeat
+	overflow: hidden
+	padding-bottom: 20px
+	@media #{$media-sm-down}
+		background: url(../img/icons/prytt-bg.svg) 0% -41% no-repeat
+	.flower-1,
+	.flower-2,
+	.flower-3,
+	.flower-4
+		@media #{$media-xs-down}
+			display: none
+	.flower-1
+		position: absolute
+		top: -145px
+		left: -252px
+		background: url(../img/icons/fl-1.svg) 50% 50% no-repeat
+		height: 380px
+		width: 314px
+		background-size: contain
+		z-index: 3
+		@media #{$media-lg-down}
+			top: -98px
+			left: -172px
+			height: 250px
+			width: 244px
+	.flower-2
+		position: absolute
+		top: -232px
+		left: -322px
+		background: url(../img/icons/fl-3.svg) 50% 50% no-repeat
+		height: 880px
+		width: 714px
+		background-size: contain
+		@media #{$media-lg-down}
+			top: -102px
+			left: -132px
+			height: 440px
+			width: 274px
+	.flower-3
+		position: absolute
+		top: -300px
+		right: -268px
+		background: url(../img/icons/fl-4.svg) 50% 50% no-repeat
+		height: 690px
+		width: 654px
+		background-size: contain
+		@media #{$media-lg-down}
+			height: 370px
+			width: 354px
+			top: -160px
+			right: -188px
+	.flower-4
+		position: absolute
+		top: -63px
+		right: -128px
+		background: url(../img/icons/fl-2.svg) 50% 50% no-repeat
+		height: 194px
+		width: 194px
+		background-size: contain
+		z-index: 3
+		@media #{$media-lg-down}
+			top: -53px
+			right: -78px
+			height: 144px
+			width: 144px
+	.main-slider-holder
+		position: relative
+		@media #{$media-lg-down}
+			max-width: 940px
+			margin: 0 auto
+			margin-top: 40px
+		@media #{$media-md-down}
+			max-width: 730px
+	h1
+		font-size: 3.18rem
+		line-height: 1.34em
+		color: $main-red
+		text-align: center
+		margin-bottom: 26px
+		position: relative
+		z-index: 2
+		@media #{$media-xs-down}
+			font-size: 1.8rem
+	.search-block
+		text-align: center
+		.search-holder
+			border: 1px solid #9b9b9b
+			position: relative
+			border-radius: 25px
+			padding: 4px 50px
+			max-width: 619px
+			margin: 0 auto
+			z-index: 4
+			background: #fff
+		input
+			box-shadow: none
+			border: none
+			background: transparent
+			outline: none
+			width: 100%
+		.search-btn
+			position: absolute
+			top: 2px
+			right: 8px
+			width: 35px
+			height: 35px
+	.pages-navigation
+		position: relative
+		z-index: 4
+		ul
+			margin-top: 20px
+			border: 1px solid #9b9b9b
+			display: inline-block
+			border-radius: 25px
+			background: #fff
+		li
+			a
+				display: inline-block
+				padding: 6px 43px
+				border-left: 1px solid #9b9b9b
+				color: #929292
+				font-weight: 700
+				text-transform: uppercase
+				font-size: 1.2rem
+				text-align: center
+				text-decoration: inherit
+				@media #{$media-xs-down}
+					font-size: 0.9rem
+					padding: 6px 7px
+			&:first-child
+				a
+					border: none
+			&.active,
+			&:hover
+				a
+					color: $main-red
+					text-decoration: underline
+			&.basket
+				position: relative
+				z-index: 520
+				&:hover
+					.empty-tooltip
+						opacity: 1
+						top: 45px
+						transition: top .2s, opacity .2s
+				.empty-tooltip
+					position: absolute
+					top: 55px
+					left: 0
+					background: rgba(47, 15, 18, 0.88)
+					color: #fff
+					padding: 10px
+					border-radius: 9px
+					z-index: 330
+					padding: 15px
+					text-align: left
+					opacity: 0
+					transition: top .2s, opacity .2s
+					span
+						white-space: nowrap
+						display: block
+						&.red
+							text-transform: uppercase
+							color: $main-red
+							font-weight: 700
+							margin-bottom: 10px
+					&:after
+						content: ''
+						position: absolute
+						top: -10px
+						left: 30px
+						width: 0
+						height: 0
+						border-style: solid
+						border-width: 0 7.5px 10px 7.5px
+						border-color: transparent transparent rgba(47, 15, 18, 0.88) transparent
+				&:hover
+					background: #570f17
+					border-top-right-radius: 16px
+					border-bottom-right-radius: 16px
+					a
+						color: #fff
+
+	.main-slider
+		margin-top: 40px
+		padding: 19px
+		background: #fff
+		box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5)
+		position: relative
+		z-index: 2
 		.image-holder
+			height: 527px
+			@media #{$media-lg-down}
+				height: 407px
+			@media #{$media-md-down}
+				height: 367px
+		.owl-nav
 			position: absolute
 			top: 50%
 			transform: translateY(-50%)
-			width: 300px
-.spheres-list
-	margin-top: 90px
-	li
-		position: relative
-		margin-bottom: 30px
-		text-align: center
-		.image-holder
-			width: 130px
-			height: 130px
-			display: block
-			margin: 0px auto
-			margin-bottom: 20px
-			border: 1px solid #ada8a8
-			border-radius: 50%
-			@media #{$media-xs-down}
-				width: 120px
-				height: 120px
-
-
-.recomendations
-	background: url(../img/content/info-bg.jpg) 50% 50% no-repeat
-	background-size: cover
-	text-align: center
-	border-bottom: 10px solid #51c7eb
-	box-shadow: inset 0px 64px 64px -70px rgba(0,0,0,0.75)
-	h4
-		color: #dde01d
-		margin-bottom: 40px
-	ul
-		color: #fff
-		display: inline-block
-		li
-			position: relative
-			padding-left: 1.3rem
-			margin-bottom: 10px
-			text-align: left
-		i
-			color: #dde01d
-			position: absolute
-			top: 2px
-			left: 1px
-	.recomendations-holder	
-		position: relative
-		max-width: 910px
-		margin: 0 auto
-		.image-holder
-			position: absolute
-			top: 0
-			left: 10px
-			width: 250px
-			margin-top: 110px
-		table
 			width: 100%
-			max-width: 510px
-			margin: 0 auto
-			color: #fff
-			text-align: left
-			border-collapse: collapse
-			td
-				border-bottom: 1px solid #fff
-				border-collapse: collapse
-				padding: 3px
-				&:last-child
-					text-align: right
-
-.fuel-set
-	text-align: center
-	.inline-layout
-		margin-top: 50px
-		@media #{$media-sm-down}
-			margin-top: 30px
-		&.col-2 > *
-			@media #{$media-sm-down}
-				width: 100%
-	.text-block
-		padding-top: 120px
-		@media #{$media-sm-down}
-			padding-top: 40px
-		p
-			text-transform: uppercase
-			font-size: 1.8em
-			font-weight: 600
-			line-height: 1.2em
-			color: #fff
-	.device-photo
-		width: 380px
-		height: 380px
-		border-radius: 50%
-		display: inline-block
-		@media #{$media-sm-down}
-			margin-top: 20px
-			width: 250px
-			height: 250px
-	.works-container
-		background: #33b0f0
-		padding: 20px
-		position: relative
-		padding-top: 56px
-		@media #{$media-sm-down}
-			padding-top: 20px
-	.scrolldown-container
-		@media #{$media-sm-down}
-			position: static
-	.works-desc
-		color: #fff
-		text-align: left
-		margin: 0
-		@media #{$media-sm-down}
-			color: #fff
-			text-align: left
-			margin: 0
-		li
-			position: relative
-			height: 159px
-			padding-left: 173px
-			max-width: 450px
-			padding-bottom: 56px
-			@media #{$media-sm-down}
-				padding: 0
-				height: auto
-				max-width: 100%
-				margin-top: 30px
-				text-align: center
-			&:last-child
-				height: 90px
-				@media #{$media-sm-down}
-					height: auto
-		.image-holder
-			width: 110px
-			height: 110px
+			height: 65px
+			@media #{$media-lg-down}
+				height: 44px
+			.owl-prev,
+			.owl-next
+				position: absolute
+				height: 61px
+				width: 61px
+				background: red
+				border-radius: 50%
+				text-indent: -9999px
+				box-shadow: $box-shadow
+				@media #{$media-lg-down}
+					height: 44px
+					width: 44px
+					background-size: 16px !important
+				@media #{$media-xs-down}
+					display: none
+				&.disabled
+					opacity: 0
+					pointer-events: none
+			.owl-prev
+				left: 20px
+				background: url(../img/icons/chevron-left.svg) 43% 50% no-repeat rgba(255, 255, 255, 0.81)
+			.owl-next
+				right: 20px
+				background: url(../img/icons/chevron-right.svg) 57% 50% no-repeat rgba(255, 255, 255, 0.81)
+		.owl-dots
 			position: absolute
-			top: -23px
-			left: 0
-			@media #{$media-sm-down}
-				position: static
-				margin: 0 auto
-.how-we-works
-	text-align: center
-	li
-		width: 240px
-		padding: 0 10px
-		position: relative
-		@media #{$media-sm-down}
+			bottom: 15px
+			left: 50%
+			transform: translateX(-50%)
 			width: 100%
-		.image-holder
-			width: 150px
-			height: 150px
-			display: inline-block
-			position: relative
-		i
-			font-size: 2.2em
-			position: absolute
-			top: 63px
-			right: -10px
-			@media #{$media-sm-down}
-				display: none
-	h6
-		color: #353333
-		font-weight: 600
-		font-size: 1.1em
-		margin: 15px 0
-		height: 50px
-		overflow: hidden
-
-.order-form
-	background: url(../img/content/form-bg.jpg) 50% 100% no-repeat
-	background-size: cover
-	text-align: right
-	box-shadow: inset 0px -68px 64px -80px rgba(0,0,0,0.71)
-	padding: 100px 0
-	@media #{$media-md-down}
-		text-align: center
-	.form
-		position: relative
-		padding: 0 20px
-		padding-left: 400px
-		text-align: right
-		max-width: 970px
-		margin: 0 auto
-		@media #{$media-md-down}
-			padding-left: 320px
-		@media #{$media-sm-down}
-			padding-left: 0
 			text-align: center
-		.text-ab
-			position: absolute
-			top: 0
-			left: 0
-			width: 380px
-			text-align: center
-			font-weight: 700
-			font-size: 1.9rem
-			line-height: 1.6em
-			@media #{$media-sm-down}
-				position: static
-				text-align: center
-				width: 100%
-			.right-now
-				font-size: 1.8em
-				line-height: 1em
-				border-bottom: 4px solid #33b0f0
+			.owl-dot
 				display: inline-block
-				margin-bottom: 20px
-	p
-		text-transform: uppercase
-		text-align: right
-		font-size: 1.6rem
-		color: #fff
-		margin-bottom: 20px
-		line-height: 1.2em
-		@media #{$media-sm-down}
-			margin-bottom: 0
-			text-align: center
-		@media #{$media-xs-down}
-			font-size: 1.1rem
-		.discount
-			color: #8f19f7
-			display: inline-block
-			padding: 2px
-			margin-left: 10px
-			font-size: 1.3em
-	.prices
-		margin-bottom: 20px
-		@media #{$media-sm-down}
-			margin-top: 30px
-	.price-block
-		display: inline-block
-		background: #33b0f0
-		color: #000
-		padding: 8px
-		text-align: left
-		vertical-align: middle
-		&.old
-			display: inline-block
-			padding: 8px
-			text-align: left
-			vertical-align: middle
-			background: transparent
-			font-weight: bold
-			color: #fff
-			font-size: 1.4em
-			margin-right: 50px
-			background: transparent
-			.old
-				text-decoration: line-through
-				line-height: 1.3em
-		.new
-			color: #8f19f7
-			display: inline-block
-			font-weight: 700
-			white-space: nowrap
-			font-size: 3.5em
-			line-height: 1em
-	.form-holder
+				height: 32px
+				width: 32px
+				background: rgba(255, 255, 255, 0.81)
+				border-radius: 50%
+				margin: 0 5px
+				vertical-align: top
+				padding: 5px
+				span
+					vertical-align: top
+				@media #{$media-lg-down}
+					height: 23px
+					width: 23px
+					padding: 3px
+				&.active,
+				&:hover
+					span
+						display: inline-block
+						width: 22px
+						height: 22px
+						background: $main-red
+						opacity: 0.4
+						border-radius: 50%
+						@media #{$media-lg-down}
+							height: 17px
+							width: 17px
+	.slider-label
 		text-align: center
-		display: inline-block
-		vertical-align: top
-		max-width: 300px
-		width: 100%
-		@media #{$media-sm-down}
-			max-width: 100%
-		input
-			margin-bottom: 20px
-			display: block
-			padding: 1px
-			width: 100%
-			&::-webkit-input-placeholder
-				text-transform: uppercase
-				font-size: 0.8em
-			&::-moz-placeholder
-				text-transform: uppercase
-				font-size: 0.8em
-			&:-ms-input-placeholder
-				text-transform: uppercase
-				font-size: 0.8em
-			&:-moz-placeholder
-				text-transform: uppercase
-				font-size: 0.8em
-			@media #{$media-sm-down}
-				margin: 10px auto
-				max-width: 250px
-	.image-holder
-		width: 370px
-		display: inline-block
-		vertical-align: top
-		position: absolute
-		top: 10px
-		left: 0
-		-webkit-box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75)
-		-moz-box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75)
-		box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75)
-		@media #{$media-md-down}
-			width: 310px
-			top: 50px
-		@media #{$media-sm-down}
-			position: static
-			margin-bottom: 50px
 		@media #{$media-xs-down}
 			display: none
-
-.comments
-	overflow: hidden
-	background: url(../img/content/comments-bg.jpg) 50% 50% no-repeat
-	background-size: cover
-	position: relative
-	.devider-top
-		content: ''
-		position: absolute
-		top: -4vw
-		right: -20px
-		height: 150px
-		width: 130%
-		background: #33b0f0
-		transform: rotate(-3deg)
-		box-shadow: 0 0 60px rgba(0,0,0,0.8)
-	.devider-bott
-		content: ''
-		position: absolute
-		bottom: -4vw
-		right: -20px
-		height: 110px
-		width: 130%
-		background: #33b0f0
-		transform: rotate(-3deg)
-		box-shadow: 0 0 60px rgba(0,0,0,0.8)
-	// .comm-icon
-	// 	position: absolute
-	// 	top: -30px
-	// 	left: 50%
-	// 	transform: translateX(-50%)
-	// 	font-size: 2.2em
-	// 	background: rgb(221, 224, 29)
-	// 	padding: 11px
-	// 	border-radius: 50%
-	// 	color: #3a4a4f
-	li
-		padding: 0 40px
-		margin-bottom: 130px
+		span
+			background: #be2132
+			color: #fff
+			padding: 35px 68px
+			display: inline-block
+			font-size: 1.8rem
+			font-weight: 700
+			@media #{$media-lg-down}
+				font-size: 1.2rem
+				padding: 18px 38px
+	
+.categories
+	color: #979797
+	.main-list
+		p
+			font-size: 1.2rem
+			font-weight: 700
+			margin-top: 34px
+			text-align: center
+	.cat-item
+		padding: 15px
+		text-align: left
+		margin-bottom: 13px
+		position: relative
+		@media #{$media-xs-down}
+			width: 50% !important
+		@media #{$media-ls-down}
+			width: 100% !important
+		&:hover
+			.cat-list
+				top: 0px
+				opacity: 1
+				transition: opacity .2s, top .2s
+				pointer-events: initial
+				z-index: 10
+			.cat-list-holder
+				&:after
+					opacity: 1
+					bottom: 79px
+					transition: opacity .2s, top .2s
+		&.center
+			.cat-list
+				@media #{$media-xs-up}
+					left: 50%
+					transform: translateX(-50%)
+		&.last
+			.cat-list
+				@media #{$media-xs-up}
+					left: auto
+					right: 0
+		&:nth-child(odd)
+			.cat-list
+				@media #{$media-xs-down}
+					right: auto 
+					left: 0 
 		&:nth-child(even)
-			.comment-holder
-				.image-holder
+			.cat-list
+				@media #{$media-xs-down}
+					left: auto 
+					right: 0
+				@media #{$media-ls-down}
 					right: auto
 					left: 0
-					border: 1px solid #bfbbbb
-					@media #{$media-xs-down}
-						right: 0px
-						left: auto
-				&:after
-					
-					bottom: -50px
-					right: auto
-					left: 50px
-					transform: rotate(26deg)
-					@media #{$media-xs-down}
-						right: 50px
-						left: auto
-						transform: rotate(-26deg)
-	.inline-layout
-		&.col-2 > *
-			@media #{$media-xs-down}
-				width: 100%
-	.comment-holder
+	.cat-list-holder
 		position: relative
-		background: #e4e1e1
-		padding: 10px
-		padding-bottom: 10px
-		border-radius: 3px
-		p
-			color: #ada9a9
-			font-weight: 200
-		a
-			color: #11b5da
-			text-decoration: none
-		.image-holder
-			height: 60px
-			width: 60px
-			position: absolute
-			right: 0
-			bottom: -110px
-			border-radius: 50%
 		&:after
 			content: ''
 			width: 0
 			height: 0
 			border-style: solid
-			border-width: 70px 10px 0 10px
-			border-color: #e4e1e1 transparent transparent transparent
+			border-width: 0 50px 50px 50px
+			border-color: transparent transparent #ffffff transparent
 			position: absolute
-			bottom: -50px
-			right: 50px
-			transform: rotate(-26deg)
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 7
+			opacity: 0
+			transition: opacity .2s, top .2s
+			top: -40px
+	.list-item
+		padding-left: 20px
+		margin-bottom: 20px
+		@media #{$media-ls-down}
+			padding-left: 5px
+		@media #{$media-xs-down}
+			width: 50%
+		h5
+			margin-bottom: 10px
+			color: #7f7f7f
+			text-transform: none
+	.cat-list
+		position: absolute
+		top: 200px
+		background: #fff
+		box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5)
+		z-index: 6
+		padding: 20px
+		width: 611px
+		opacity: 0
+		transition: opacity .2s, top .2s
+		pointer-events: none
+		@media #{$media-xs-down}
+			width: 430px
+		@media #{$media-ls-down}
+			width: 100%
+			padding: 10px
+		p
+			margin-top: 0
+			margin-bottom: 20px
+			color: #e3ae8d
+	.cat-item
+		&:nth-child(1)
+			.image-holder
+				border: solid 2px #e3ae8d
+			.cat-list
+				p
+					color: #e3ae8d
+			.sub-list
+				li
+					&:hover
+						color: #e3ae8d
+		&:nth-child(2)
+			.image-holder
+				border: solid 2px #8d90e3
+			.cat-list
+				p
+					color: #8d90e3
+			.sub-list
+				li
+					&:hover
+						color: #8d90e3
+		&:nth-child(3)
+			.image-holder
+				border: solid 2px #e38d8d
+			.cat-list
+				p
+					color: #e38d8d
+			.sub-list
+				li
+					&:hover
+						color: #e38d8d
+
+		&:nth-child(4)
+			.image-holder
+				border: solid 2px #e38db4
+			.cat-list
+				p
+					color: #e38db4
+			.sub-list
+				li
+					&:hover
+						color: #e38db4
+		&:nth-child(5)
+			.image-holder
+				border: solid 2px #6cca77
+			.cat-list
+				p
+					color: #6cca77
+			.sub-list
+				li
+					&:hover
+						color: #6cca77
+		&:nth-child(6)
+			.image-holder
+				border: solid 2px #5eb9bc
+			.cat-list
+				p
+					color: #5eb9bc
+			.sub-list
+				li
+					&:hover
+						color: #5eb9bc
+		.image-holder
+			height: 200px
+
+		
+
+
+.get-all
+	background: #be2132
+	margin-top: 54px
+	padding-top: 8px
+	padding-bottom: 59px
+	.bordered
+		span
+			background: #be2132
+			color: #fff
+	.mail-input
+		border: 1px solid #9b9b9b
+		position: relative
+		border-radius: 25px
+		padding: 4px 50px
+		max-width: 619px
+		margin: 0 auto
+		background: #fff
+		padding-left: 20px
+		input
+			box-shadow: none
+			border: none
+			background: transparent
+			outline: none
+			width: 100%
+		.search-btn
+			position: absolute
+			top: 2px
+			right: 2px
+			height: 35px
+			line-height: 35px
+			padding: 0 39px
+			background: #be2132
+			&:hover
+				background: #570f17
+			@media #{$media-md-down}
+				height: 28px
+				line-height: 28px
+				padding: 0 11px
+		
+.m-slider
+	@media #{$media-md-down}
+		max-width: 1020px
+		margin: 0 auto
+	@media #{$media-sm-down}
+		max-width: 610px
+	&.colection
+		.text
+			height: 84px
+		.image-holder
+			img
+				transition: transform .2s
+			&:hover
+				img
+					transform: scale(1.1)
+					transition: transform .2s
+	.item
+		padding: 5px
+		text-align: center
+	.image-holder
+		box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5)
+		height: 246px
+		margin-bottom: 22px
+	.text
+		text-align: center
+		height: 56px
+		overflow: hidden
+		font-size: 0.95em
+		margin-bottom: 6px
+	.price,
+	.wait
+		text-align: center
+		font-size: 1.2em
+		font-weight: 600
+		color: #be2132
+		font-family: "Roboto"
+	.wait
+		font-size: 1em
+	.button
+		padding: 0px 20px
+		margin-top: 13px
+		line-height: 37px
+		background: #be2132
+		&:hover
+			background: #570f17
+	.owl-nav
+		position: absolute
+		top: 28%
+		transform: translateY(-50%)
+		width: 100%
+		height: 61px
+		@media #{$media-lg-down}
+			height: 44px
+		.owl-prev,
+		.owl-next
+			position: absolute
+			height: 61px
+			width: 61px
+			background: red
+			border-radius: 50%
+			text-indent: -9999px
+			border: 1px solid #dedede
+			box-shadow: $box-shadow
+			@media #{$media-lg-down}
+				height: 44px
+				width: 44px
+				background-size: 16px !important
+			&.disabled
+				opacity: 0
+				pointer-events: none
+		.owl-prev
+			left: -90px
+			background: url(../img/icons/chevron-left.svg) 43% 50% no-repeat rgba(255, 255, 255, 0.81)
+			@media #{$media-md-down}
+				left: -70px
+		.owl-next
+			right: -90px
+			background: url(../img/icons/chevron-right.svg) 57% 50% no-repeat rgba(255, 255, 255, 0.81)
+			@media #{$media-md-down}
+				right: -70px
+	.owl-dots
+		display: none
+	.label	
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 3
+		background: #be2132
+		padding: 2px 10px
+		color: #fff
+	.goods-slider
+		.item
+			padding: 10px
+		.flip-container
+			height: 246px
+			perspective: 600px
+			margin-bottom: 20px
+			.front
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				transition: transform .4s
+				transform: rotateY(0deg)
+				transform-style: preserve-3d
+				z-index: 2
+				backface-visibility: hidden
+			.back
+				width: 100%
+				height: 246px
+				background: #be2132
+				position: absolute
+				top: 0
+				left: 0
+				transform: rotateY(-180deg)
+				transform-style: preserve-3d
+				transition: transform .4s
+				backface-visibility: hidden
+				color: #fff
+				padding-top: 50px
+				.button
+					font-size: 0.7em
+					padding: 0 47px
+					line-height: 25px
+					margin: 0 10px
+					background: rgba(0, 0, 0, 0.54)
+				.btn-holder
+					margin-top: 20px
+					a
+						text-decoration: underline
+						font-size: 0.8em
+						display: inline-block
+						margin: 0 10px
+				.art
+					position: absolute
+					bottom: 10px
+					left: 50%
+					transform: translateX(-50%)
+					width: 100%
+					font-size: 12px
+				.more
+					text-decoration: underline
+					font-size: 0.8em
+			&:hover
+				.back
+					transform: rotateY(0deg)
+				.front
+					transform: rotateY(180deg)
+					transition: transform .4s
+				
 
 
 
 
-.scrolldown-container
-	position: absolute
+.advantages
+	background: #e8e8e8
+	margin-top: 49px
+	padding-top: 46px
 	text-align: center
-	bottom: 21px
-	left: 46px
+	padding-bottom: 30px
+	li
+		padding: 0 20px
+		margin-bottom: 20px
+		@media #{$media-xs-down}
+			width: 50% !important
+		@media #{$media-ls-down}
+			width: 100% !important
+	.text-holder
+		height: 153px
+		overflow: hidden
+	h6
+		text-transform: none
+		font-size: 1.2em
+		margin-top: 26px
+		margin-bottom: 15px
+		color: $main-red
+	.image-holder
+		width: 138px
+		height: 138px
+		background: #be2132
+		border-radius: 50%
+		margin: 0 auto
+.vendors
+	background: #be2132
+	.item
+		padding: 0
+	.image-holder
+		box-shadow: none
+		height: 160px
+		margin: 0
+		padding: 20px
+		&:hover
+			background: #861824
+		img
+			object-fit: contain
 
-.scrolldown-btn
-	position: relative
-	display: inline-block
-	path
-		&.first-path
-			animation: scrollanim 1s ease-in-out infinite
-			animation-delay: 0.8s
-		&.second-path
-			animation: scrollanim2 1s ease-in-out infinite
+.about-us
+	padding-bottom: 45px
+	h2
+		margin-bottom: 18px
+	p
+		font-size: 0.8em
+		line-height: 1.4em
+		margin-bottom: 16px
+		text-align: justify
+	.text-holder
+		@media #{$media-lg-down}
+			max-width: 770px
+			margin: 0 auto
 
-@-webkit-keyframes scrollanim
-	0%
-		-webkit-transform: translate(0, -40px)
-		opacity: 0
-	60%
-		-webkit-transform: translate(0, 0)
-		opacity: 0.8
 
-@-moz-keyframes scrollanim
-	0%
-		-moz-transform: translate(0, -40px)
-		opacity: 0
-	60%
-		-moz-transform: translate(0, 0)
-		opacity: 0.8
+.contact-us
+	padding-top: 10px
+	background: #e8e8e8
+	padding-bottom: 34px
+	.form-holder
+		max-width: 670px
+		margin: 0 auto
+	h2
+		margin-bottom: 40px
+		span
+			background: #e8e8e8
+	input,
+	textarea
+		border: 1px solid #9b9b9b
+		position: relative
+		border-radius: 25px
+		padding: 4px 50px
+		margin: 0 auto
+		background: #fff
+		padding-left: 20px
+		width: 100%
+		margin-bottom: 15px
+	textarea
+		margin-left: 20px
+		resize: none
+		height: 146px
+		@media #{$media-md-down}
+			height: 127px
+		@media #{$media-xs-down}
+			margin: 0
+	.btn-holder
+		text-align: center
+		margin-top: 15px
+	.button
+		padding: 0 39px
+		background: #be2132
+		&:hover
+			background: #570f17
+	.inputs
+		@media #{$media-xs-down}
+			width: 100% !important
 
-@keyframes scrollanim
-	0%
-		-webkit-transform: translate(0, -40px)
-		-moz-transform: translate(0, -40px)
-		-ms-transform: translate(0, -40px)
-		-o-transform: translate(0, -40px)
-		transform: translate(0, -40px)
-		opacity: 0
-	60%
-		-webkit-transform: translate(0, 0)
-		-moz-transform: translate(0, 0)
-		-ms-transform: translate(0, 0)
-		-o-transform: translate(0, 0)
-		transform: translate(0, 0)
-		opacity: 0.8
-
-@-webkit-keyframes scrollanim2
-	0%
-		-webkit-transform: translate(0, -40px)
-		opacity: 0
-	60%
-		-webkit-transform: translate(0, 0px)
-		opacity: 0.6
-
-@-moz-keyframes scrollanim2
-	0%
-		-moz-transform: translate(0, -40px)
-		opacity: 0
-	60%
-		-moz-transform: translate(0, 0px)
-		opacity: 0.6
-@keyframes scrollanim2
-	0%
-		-webkit-transform: translate(0, -40px)
-		-moz-transform: translate(0, -40px)
-		-ms-transform: translate(0, -40px)
-		-o-transform: translate(0, -40px)
-		transform: translate(0, -40px)
-		opacity: 0
-	60%
-		-webkit-transform: translate(0, 0px)
-		-moz-transform: translate(0, 0px)
-		-ms-transform: translate(0, 0px)
-		-o-transform: translate(0, 0px)
-		transform: translate(0, 0px)
-		opacity: 0.6
+.footer
+	background: $main-red
+	padding-top: 47px
+	.foot-nav
+		// @media #{$media-xs-down}
+		// 	display: none
+		position: relative
+		@media #{$media-xs-down}
+			text-align: center
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			height: 100%
+			width: 1px
+			background: #fff
+			@media #{$media-ls-down}
+				display: none
+	.logo-holder
+		@media #{$media-xs-down}
+			width: 50%
+			padding-right: 10px
+		@media #{$media-ls-down}
+			padding-right: 0
+			width: 100%
+	.nav-item
+		padding: 0 11px
+		border-right: 1px solid #fff
+		height: 241px
+		position: relative
+		@media #{$media-xs-down}
+			width: 50%
+			border: none
+			padding-bottom: 40px
+			height: auto
+			margin-bottom: 20px
+		@media #{$media-ls-down}
+			width: 100%
+			text-align: center
+		&:last-child
+			border: none
+		h6
+			text-transform: none
+			font-size: 0.9em
+			margin-bottom: 17px
+			color: #fff
+		li
+			line-height: 1.1em
+		a
+			font-size: 0.9em
+			font-family: "Roboto"
+			color: #fff
+			display: inline-block
+			&:hover
+				color: rgb(87, 15, 23)
+		.btn-holder
+			text-align: center
+			margin-top: 30px
+			.button
+				font-family: "RobotoSlab"
+				padding: 0 20px
+				line-height: 2em
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				bottom: 0
+				white-space: nowrap
+				border: 1px solid transparent
+				&:hover
+					background: transparent
+					border: 1px solid rgba(0, 0, 0, 0.54)
+	.phones-list
+		span
+			font-weight: 700
+	.rights
+		border-top: 1px solid #fff
+		margin-top: 13px
+		padding-top: 9px
+		font-size: 0.85em
+		text-align: center
+		color: #fff
+		font-family: "Roboto"
+	.bott-holder
+		border-top: 1px solid #fff
+		margin-top: 29px
+		padding-top: 26px
+		.logo-holder
+			.image-holder
+				max-width: 245px
+				margin: 0 auto
+			span
+				margin-top: 12px
+				display: inline-block
+				font-size: 0.9em
+				color: #fff
+		.big-img
+			height: 214px
+			padding: 0 11px
+			@media #{$media-xs-down}
+				display: none
+			.image-holder
+				background: #d8d8d8
+		.contact-info
+			padding-left: 8px
+			color: #fff
+			font-size: 0.9rem
+			@media #{$media-xs-down}
+				width: 50%
+			@media #{$media-ls-down}
+				width: 100%
+				text-align: center
+				margin-top: 30px
+			.black
+				color: #570f16
+				margin-right: 7px
+			.graf
+				margin-top: 23px
+		.socials-list
+			margin-top: 39px
+			border-top: 1px solid #fff
+			a
+				display: inline-block
+				height: 49px
+				width: 49px
+				background: #e8e8e8
+				border-radius: 6px
+				margin: 4px
+				@media #{$media-md-down}
+					height: 29px
+					width: 29px
+					margin: 2px

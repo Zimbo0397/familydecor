@@ -1,6 +1,6 @@
 {
-  "name": "handcharger",
-  "description": "handcharger project",
+  "name": "familydecor",
+  "description": "familydecor project",
   "main": "index.html",
   "moduleType": [],
   "keywords": [
@@ -9,7 +9,7 @@
     "V_Zbrizskiy"
   ],
   "license": "no license",
-  "homepage": "https://github.com/Zimbo0397/handcharger.git",
+  "homepage": "https://github.com/Zimbo0397/familydecor.git",
   "private": true,
   "ignore": [
     "**/.*",

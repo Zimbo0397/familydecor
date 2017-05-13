@@ -3,60 +3,69 @@
 // if ($.browser.safari) $('body').addClass('safari');
 // if ($.browser.iphone || $.browser.ipad || $.browser.ipod ) $('body').addClass('ios');
 
-$(window).on('load', function () {
-	new WOW().init();
-});
+$(window).on('load', function() {
 
-$(window).on('scroll', function() {
-  if($('.facts').length) {
-      var targOffsetTop = $('.facts').offset().top,
-          targScrollTop = $(window).scrollTop(),
-          winHeight =$(window).height();
-          if (!targOffsetTop) {
-            targOffsetTop = 100000;
-          }
-          if (targOffsetTop - winHeight < targScrollTop) {
-            if (!$('.facts').hasClass('numbers')) {
-                $('#animateNumber1')
-                  .prop('number', 0)
-                  .animateNumber(
-                    {
-                      number: 1000
-                    },
-                    2000
-                  );
-
-                  $('#animateNumber2')
-                  .prop('number', 0)
-                  .animateNumber(
-                    {
-                      number: 20000
-                    },
-                    2000
-                  );
-
-                  $('#animateNumber3')
-                  .prop('number', 0)
-                  .animateNumber(
-                    {
-                      number: 3
-                    },
-                    2000
-                  );
-            }
-            $('.facts').addClass('numbers')
-          }
-    
-  }
-});
-
-
-$(document).ready(function(){
-	$('.orderbtn').each(function() {
-		$(this).on('click', function(e) {
-			e.preventDefault();
-            var top = $('#order-form').offset().top;
-        	$('body,html').animate({scrollTop: top}, 1500);
-		})
+	$('.phone-numbers').on('click', function() {
+		$(this).toggleClass('open');
 	});
+
+	$('.owl-1').owlCarousel({
+	    loop: true,
+	    items: 1,
+	    nav: true
+	 });
+
+	$('.owl-2').owlCarousel({
+	    items: 4,
+	    loop: true,
+	    margin: 10,
+	    nav: true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:false
+	        },
+	        580:{
+	            items:2,
+	            nav:false
+	        },
+	        800:{
+	        	items:2,
+	            nav:true
+	        },
+	        1200:{
+	            items:3,
+	            nav:true
+	        },
+	        1600:{
+	            items:4,
+	            nav:true
+	        }
+	    }
+	 });
+
+
+	$('.owl-3').owlCarousel({
+		items: 5,
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		responsive:{
+	        0:{
+	            items:2
+	        },
+	        580:{
+	            items:4
+	        },
+	        1000:{
+	            items:5
+	        }
+	    }
+	});
+
+});
+
+$('#mobile-nav-btn').on('click', function() {
+	$('#mobile-list').toggleClass('open');
 });

@@ -1,252 +1,653 @@
 extends layout
 
 block vars
-	- var title = "FF-home"
+	- var title = "FD"
 	- var navigation = "index"
 
 block content
-	section.main-display
+	.main-display
 		.container
 			h1
-				|Ручная экспресс зарядка - 
+				|ИНТЕРНЕТ МАГАЗИН
+				br 
+				|ФРАНЦУЗСКОГО ДЕКОРА
 				br
-				| вечный источник питания!
-			.order-now
-					.label
-						.image-holder
-							img(src="img/icons/12.png", alt="")
-					.time
-						p.old Старая цена: 
-							span.price   419 грн
-						p.new Цена по акции: 
-							span.price    199
-								span.cur грн 
-						p До конца акции осталось
-						.counter-holder
-							#CDT
-						a(href="#").order.button.orderbtn  Заказать
+				|И ПОДАРКОВ В УКРАИНЕ
+			.search-block
+				.search-holder
+					input(type="text")
+					a(href="#").search-btn
+						img(src="img/icons/search.svg", alt="")
+				.pages-navigation
+					ul.list-inline
+						li
+							a(href="#") Wishlist
+						li
+							a(href="#") Каталог
+						li.basket
+							a(href="#") Корзина
+							.empty-tooltip
+								span.red В корзине 
+								span 4 товаров на сумму 2090.00 грн.
+			.main-slider-holder
+				.flower-1
+				.flower-2
+				.flower-3
+				.flower-4
+				.main-slider
+					.owl-carousel.owl-1
+						.item
+							.image-holder
+								img(src="img/content/sld-1.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-2.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-3.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-4.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-5.png", alt="")
+						.item
+							.image-holder
+								img(src="img/content/sld-6.png", alt="")
+				.slider-label
+					span ДОМАШНИЙ УЮТ И СЕМЕЙНЫЕ ЦЕННОСТИ
 
-	section.advantages-display
+	.categories
 		.container
-			h2 РУЧНАЯ ЭКСПРЕСС ЗАРЯДКА
-			p
-				b Покупайте малогабаритную динамо-зарядку - 
-				|она поможет подзарядить ваш телефон, навигатор, планшет, светодиодный фонарь, радиоприемник, в экстренной ситуации.
-			.advantages-cont
-				.image-holder.main-img
-					img.fake-img(src="img/content/mount.jpg", alt="img/content/mount.jpg")
-					.img(style= 'background-image: url(/img/content/mount.jpg)')
-				ul.advantages-list
-					li(data-wow-duration="1.2s").wow.bounceInRight
-						.image-holder
-							img(src="img/icons/b-1.svg", alt="")
-						p
-							|USB-порт для зарядки любых устройств
-					li(data-wow-duration="1.4s").wow.bounceInRight
-						.image-holder
-							img(src="img/icons/b-2.svg", alt="")
-						p
-							|Ваша собственная миниатюрная электростанция в кармане
-					li(data-wow-duration="1.6s").wow.bounceInRight
-						.image-holder
-							img(src="img/icons/b-3.svg", alt="")
-						p
-							|2 минут зарядки = до 6 минут в режиме разговора
-					li(data-wow-duration="1.8s").wow.bounceInRight
-						.image-holder
-							img(src="img/icons/b-4.svg", alt="")
-						p
-							|Удобное для использования в путешествии
-					li(data-wow-duration="2s").wow.bounceInRight
-						.image-holder
-							img(src="img/icons/b-6.svg", alt="")
-						p
-							|Безопасная в использовании
-					li(data-wow-duration="2.2s").wow.bounceInRight
-						.image-holder
-							img(src="img/icons/b-5.svg", alt="")
-						p
-							|Полная совместимость со всеми устройствами на Android
-	section.how-it-works.white
-		.devider-top
-		.container
-			h2  Возможности ЭКСПРЕСС ЗАРЯДКи
-			.works-description
-				ul.inline-layout.col-2
-					li.wow.bounceInLeft
-						.image-holder
-							img(src="img/icons/h-1.svg", alt="")
-						p
-							|Можно подключать любое устройство usb: телефон, планшет, плеер
-					li.wow.bounceInUp
-						.image-holder
-							img(src="img/icons/h-2.svg", alt="")
-						p
-							|Незаменимая вещь в походах, путешествиях, экспедициях - там, где нет розеток
-					li.wow.bounceInRight
-						.image-holder
-							img(src="img/icons/h-3.svg", alt="")
-						p
-							|Удобство и простота использования - отсутствие каких-либо батареек или аккумуляторов!
-					li.wow.bounceInLeft
-						.image-holder
-							img(src="img/icons/h-4.svg", alt="")
-						p
-							|За 3 минуты использования сможет зарядить ваш телефон для 6-8 минут работы в режиме разговора или на 20-30 минут в режиме ожидания.
-					li.wow.bounceInUp
-						.image-holder
-							img(src="img/icons/h-5.svg", alt="")
-						p
-							|Легкий вес, малый размер, компактная складывающаяся ручка-крутилка.
-					li.wow.bounceInRight
-						.image-holder
-							img(src="img/icons/h-6.svg", alt="")
-						p
-							|Не вращайте слишком быстро, сохраняйте темп 100-120 оборотов в минуту
-			.how-to-get
-				h3 Как получить портативное зарядное устройство ?
-				ul.list-inline
-					li.wow.bounceInLeft
-						.image-holder
-							img(src="img/icons/h2-1.svg", alt="")
-						span Оформляете заказ на сайте
-					li.wow.bounceInUp
-						.image-holder
-							img(src="img/icons/h2-2.svg", alt="")
-						span Подтверждаете заказ с менеджером
-					li.wow.bounceInRight
-						.image-holder
-							img(src="img/icons/h2-3.svg", alt="")
-						span Получаете заказ на почте)
+			h2.bordered
+				span Категории товаров
+			ul.main-list.inline-layout.col-3
+				li.cat-item
+					.image-holder
+						img(src="img/content/cat-1.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Для дома и интерьера
+
 					
-		.devider-bott
-
-	section.recomendations
+									
+				li.cat-item.center
+					.image-holder
+						img(src="img/content/cat-2.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Мебель
+				li.cat-item.last
+					.image-holder
+						img(src="img/content/cat-3.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Мелочи и подарки
+				li.cat-item
+					.image-holder
+						img(src="img/content/cat-4.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Кухня и еда
+				li.cat-item.center
+					.image-holder
+						img(src="img/content/cat-5.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Интерьеры и коллекции
+				li.cat-item.last
+					.image-holder
+						img(src="img/content/cat-6.jpg", alt="")
+					.cat-list-holder
+						.cat-list
+							p Для дома и интерьера
+							ul.inline-layout.col-3
+								li.list-item
+									h5 Уютная обстановка
+									ul.sub-list
+										li
+											a(href="#") прихожая
+										li
+											a(href="#") ватная комната
+										li
+											a(href="#") корзины и коробка
+										li
+											a(href="#") декорации
+										li
+											a(href="#") вазы и кашпо
+								li.list-item
+									h5 Ароматы
+									ul.sub-list
+										li
+											a(href="#") Дифузоры и аромапалочки
+										li
+											a(href="#") аромат для дома
+										li
+											a(href="#") свечи
+								li.list-item
+									h5 Декор стен и фоторамки
+									ul.sub-list
+										li
+											a(href="#") Вешалки и крючки
+										li
+											a(href="#") картины и таблички
+										li
+											a(href="#") фоторамки
+										li
+											a(href="#") зеркала
+								li.list-item
+									h5 Часы
+									ul.sub-list
+										li
+											a(href="#") комнатные часы
+										li
+											a(href="#") часы настенные
+								li.list-item
+									h5 Освещение
+									ul.sub-list
+										li
+											a(href="#") светильники
+										li
+											a(href="#") абажуры
+										li
+											a(href="#") подсвечники
+					p Текстиль
+	.get-all
 		.container
-			.recomendations-holder.wow.bounceInUp
-				h2 Характеристики Устройства
-				table
-					tbody
-						tr
-							td Напряжение на USB выходе:
-							td DC 5V постоянное
-						tr
-							td Средний ток заряда:
-							td 400mA
-						tr
-							td Размеры:
-							td 6 x 2.8 x 4.3 см
-						tr
-							td Материал корпуса:
-							td пластик ABS
-						tr
-							td Вес:
-							td 57 гр.
+			form(action="")
+				h2.bordered.red
+					span Получить весь каталог товаров
+				.mail-input
+						input(type="text", placeholder="Введите ваш e-mail")
+						button.search-btn.button получить
 
-		.start-order
-				a(href="#").button.lg-button.orderbtn Купить
+	.m-slider
+		.container
+			h2.bordered
+				span Товары недели
+			.goods-slider
+				.owl-carousel.owl-2
+					.item
+						.flip-container
+							.front
+								.label new
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
 
-	section.fuel-set
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+					.item
+						.flip-container
+							.front
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+					.item
+						.flip-container
+							.front
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+					.item
+						.flip-container
+							.front
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+					.item
+						.flip-container
+							.front
+								.image-holder
+									img(src="img/content/gd-1.jpg", alt="")
+							.back
+								a(href="#").button подробнее
+								.btn-holder
+									a(href="#") Купить
+									a(href="#") В WISHLIST
+								span.art Артикул: 611400
+
+						p.text
+							|Жидкое мыло "Женьшень-лимон"
+						p.price 415.00 грн
+						a(href="#").button Купить в 1 клик
+
+	.get-all
 		.container
-			h2 Как это работает ?
-			.works-container.inline-layout.col-2
-				.inline-el.wow.bounceInLeft
-					.image-holder.device-photo
-						img(src="img/content/fuel-foto.jpg", alt="")
-				.inline-el.wow.bounceInRight
-					ul.works-desc
-						li
-							.image-holder
-								img(src="img/icons/h-6.svg", alt="")
-							.scrolldown-container
-								.scrolldown-btn
-									svg(version='1.1', id='Слой_1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='20px', height='45px', viewbox='0 0 50 80', enable-background='new 0 0 50 80', xml:space='preserve')
-										path.first-path(fill='#FFFFFF', d='M24.752,79.182c-0.397,0-0.752-0.154-1.06-0.463L2.207,57.234c-0.306-0.305-0.458-0.656-0.458-1.057\
-										s0.152-0.752,0.458-1.059l2.305-2.305c0.309-0.309,0.663-0.461,1.06-0.461c0.398,0,0.752,0.152,1.061,0.461l18.119,18.119\
-										l18.122-18.119c0.306-0.309,0.657-0.461,1.057-0.461c0.402,0,0.753,0.152,1.059,0.461l2.306,2.305\
-										c0.308,0.307,0.461,0.658,0.461,1.059s-0.153,0.752-0.461,1.057L25.813,78.719C25.504,79.027,25.15,79.182,24.752,79.182z')
-										path.second-path(fill='#FFFFFF', d='M24.752,58.25c-0.397,0-0.752-0.154-1.06-0.463L2.207,36.303c-0.306-0.304-0.458-0.655-0.458-1.057\
-										c0-0.4,0.152-0.752,0.458-1.058l2.305-2.305c0.309-0.308,0.663-0.461,1.06-0.461c0.398,0,0.752,0.153,1.061,0.461l18.119,18.12\
-										l18.122-18.12c0.306-0.308,0.657-0.461,1.057-0.461c0.402,0,0.753,0.153,1.059,0.461l2.306,2.305\
-										c0.308,0.306,0.461,0.657,0.461,1.058c0,0.401-0.153,0.753-0.461,1.057L25.813,57.787C25.504,58.096,25.15,58.25,24.752,58.25z')
-							span Крутим ручку вырабатываем электроенергию
-						li
-							.image-holder
-								img(src="img/icons/h-7.svg", alt="")
-							.scrolldown-container
-								.scrolldown-btn
-									svg(version='1.1', id='Слой_1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='20px', height='45px', viewbox='0 0 50 80', enable-background='new 0 0 50 80', xml:space='preserve')
-										path.first-path(fill='#FFFFFF', d='M24.752,79.182c-0.397,0-0.752-0.154-1.06-0.463L2.207,57.234c-0.306-0.305-0.458-0.656-0.458-1.057\
-										s0.152-0.752,0.458-1.059l2.305-2.305c0.309-0.309,0.663-0.461,1.06-0.461c0.398,0,0.752,0.152,1.061,0.461l18.119,18.119\
-										l18.122-18.119c0.306-0.309,0.657-0.461,1.057-0.461c0.402,0,0.753,0.152,1.059,0.461l2.306,2.305\
-										c0.308,0.307,0.461,0.658,0.461,1.059s-0.153,0.752-0.461,1.057L25.813,78.719C25.504,79.027,25.15,79.182,24.752,79.182z')
-										path.second-path(fill='#FFFFFF', d='M24.752,58.25c-0.397,0-0.752-0.154-1.06-0.463L2.207,36.303c-0.306-0.304-0.458-0.655-0.458-1.057\
-										c0-0.4,0.152-0.752,0.458-1.058l2.305-2.305c0.309-0.308,0.663-0.461,1.06-0.461c0.398,0,0.752,0.153,1.061,0.461l18.119,18.12\
-										l18.122-18.12c0.306-0.308,0.657-0.461,1.057-0.461c0.402,0,0.753,0.153,1.059,0.461l2.306,2.305\
-										c0.308,0.306,0.461,0.657,0.461,1.058c0,0.401-0.153,0.753-0.461,1.057L25.813,57.787C25.504,58.096,25.15,58.25,24.752,58.25z')
-							span Идет процесс зарядки
-						li
-							.image-holder
-								img(src="img/icons/h-8.svg", alt="")
-							span Ловкость рук и никакого волшебства
-	section#order-form.order-form
+			form(action="")
+				h2.bordered.red
+					span Получить свежие идеи
+				.mail-input
+						input(type="text", placeholder="Введите ваш e-mail")
+						button.search-btn.button подписаться
+
+	.m-slider.colection
 		.container
-			.form
+			h2.bordered
+				span Коллекции и интерьеры
+			.goods-slider
+				.owl-carousel.owl-2
+					.item
+						.image-holder
+							img(src="img/content/col-1.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-2.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-3.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-4.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-3.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+					.item
+						.image-holder
+							img(src="img/content/col-4.jpg", alt="")
+						p.text
+							|Жидкое мыло «Женьшень-лимон» Жидкое мыло Жидкое мыло «Женьшень-лимон» Жидкое мыло
+
+	.advantages
+		.container
+			ul.ad-list.inline-layout.col-4
+				li
+					.image-holder
+						img(src="img/icons/ico-1.png", alt="")
+					.text-holder
+						h6 Удобство покупки
+						p
+							|Удобная доставка и покупка онлайн или в официальном магазине
+				li
+					.image-holder
+						img(src="img/icons/ico-2.png", alt="")
+					.text-holder
+						h6 Официальное дилерство
+						p
+							|Осуществляем прямые поставки товара из Европы
+				li
+					.image-holder
+						img(src="img/icons/ico-3.png", alt="")
+					.text-holder
+						h6 Всегда в тренде
+						p
+							|Мы идем в ногу с мировыми тенденциями интерьера и декора
+				li
+					.image-holder
+						img(src="img/icons/ico-4.png", alt="")
+					.text-holder
+						h6 Большой опыт
+						p
+							|Работаем на рынке Украины более 15 лет
+
+	.vendors
+		.owl-carousel.owl-3
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-1.png", alt="")
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-2.png", alt="")
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-3.png", alt="")
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-4.png", alt="")
+			.item
+				a(href="#")
+					.image-holder
+						img(src="img/icons/lg-5.png", alt="")
+
+
+	.about-us
+		.container
+			h2.bordered
+				span О нас
+			.text-holder
+				p
+					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+				p
+					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+				p
+					|Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+
+
+	.contact-us
+		.container
+			h2.bordered
+				span Обратная связь
+			.form-holder
 				form(action="")
-					//- .image-holder
-					//- 	img(src="img/content/bl-or.jpg", alt="")
-					p.text-ab
-						|Закажите
-						br
-						|прямо сейчас 
-						span.right-now зарядку
-						br
-						| со скидкой
-						span.discount 53%
-					div.prices
-						.price-block.old
-							span Старая цена: 
-							br 
-							span.old    499 грн
-						.price-block
-							span Новая цена:   
-							br
-							span.new    199 грн 
-					.form-holder
-						input(type="text", placeholder="Введите ФИО")
-						input(type="text", placeholder="Введите номер телефона")
-						input(type="submit", value="Заказать", class="button")
+					.inline-layout.col-2
+						.inputs
+							input(type="text", placeholder="Введите ваше имя")
+							input(type="text", placeholder="Введите номер телефона")
+							input(type="text", placeholder="Введите ваше e-mail")
+						.inputs
+							textarea#ere(placeholder="Введите ваше сообщение")
+					.btn-holder
+						button.button отправить
 
-	section.comments
-		.devider-top
-		.comm-icon
-			i.fa.fa-comments-o
-		.container
-			ul.inline-layout.col-2
-				li.wow.bounceInUp
-					.comment-holder
-						p  Для любителей путешествий, рыбаков и охотников вещица очень нужная, мобилку подзарядить, подсветить. Очень рекомендую полезная штука.
-						a(href="#")  Валентин Чижов
-						.image-holder
-							img(src="img/content/ot11.jpg", alt="")
-				li.wow.bounceInUp
-					.comment-holder
-						p  Реально быстро заряжает телефон в экстренных случаях Очень компактная в сложенном виде. Можно везде брать с собой, на природу, в поезд, на улицу на отдых.
-						a(href="#")  Гаврило Владимиров
-						.image-holder
-							img(src="img/content/ot12.jpg", alt="")
-				li.wow.bounceInUp
-					.comment-holder
-						p  Хорошее качество, ребенок крутил крутил, ничего не сломал. Работает практически со всеми USB устройствами.
-						a(href="#")  Евгений Буйнарский
-						.image-holder
-							img(src="img/content/ot13.jpg", alt="")
-				li.wow.bounceInUp
-					.comment-holder
-						p  Компактная складывающаяся ручка-крутилка. Минусы - не обнаружено
-						a(href="#")  Василий Климов
-						.image-holder
-							img(src="img/content/ot14.jpg", alt="")
-		.devider-bott
 
- 
+
+
